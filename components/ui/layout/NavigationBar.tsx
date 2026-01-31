@@ -42,11 +42,11 @@ export function NavigationBar() {
         <Portal>
           <Drawer.Backdrop />
           <Drawer.Positioner>
-            <Drawer.Content backgroundColor="rgb(12, 60, 96)" userSelect="none">
+            <Drawer.Content backgroundColor="rgb(121, 0, 101)" userSelect="none">
               <Drawer.Body p={12}>
                 <Link href="/">
                   <Text fontSize="2xl" fontWeight="bold" color="white" mb="20%">
-                    ALGAR ALLY INTERNATIONAL
+                    FUTURESCAPE XCHANGE
                   </Text>
                 </Link>
                 <Flex gap={12} flexDir="column">
@@ -95,7 +95,7 @@ export function NavigationBar() {
         >
           <Flex flexDir="row" alignItems="center" gap={2}>
             <Link href="/">
-              <Image src="/algarlogo.png" alt="Logo" width="82px" height="82px" />
+              <Image src="/Futurescapelogo.png" alt="Logo" width="200px" height="100px" />
             </Link>
           </Flex>
           <Icon

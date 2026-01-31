@@ -18,20 +18,11 @@ export function Footer() {
         <Flex justifyContent="space-between" flexWrap="wrap" gap={6}>
           <Flex flexDir="column" gap={1}>
             <Link href="/">
-              <Text fontWeight="bold">ALGAR ALLY INTERNATIONAL</Text>
+              <Text fontWeight="bold">FUTURESCAPE XCHANGE</Text>
             </Link>
 
             <Box>
               <Text>Philippines: </Text>
-              <Text>1668 Meriton One, Room 202</Text>
-              <Text>Quezon City Ave., Brgy. South Triangle</Text>
-              <Text>Quezon City, Metro Manila</Text>
-            </Box>
-
-            <Box>
-              <Text>USA: </Text>
-              <Text>1040 N Kings Highway, Suite 400</Text>
-              <Text>Cherry Hill, NJ 08002</Text>
             </Box>
           </Flex>
           
@@ -52,7 +43,7 @@ export function Footer() {
             </Box>
           </Flex>
         </Flex>
-        <Text>© ALGAR ALLY INTERNATIONAL, {new Date().getFullYear()}</Text>
+        <Text>© FUTURESCAPE XCHANGE, {new Date().getFullYear()}</Text>
       </Flex>
     </Box>
   );

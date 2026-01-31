@@ -9,23 +9,24 @@ import {
   Image
 } from "@chakra-ui/react";
 import { CiGlobe } from "react-icons/ci";
-import { FaCross, FaRobot, FaUserDoctor } from "react-icons/fa6";
+import { FaBriefcase, FaCross, FaRobot, FaUserDoctor } from "react-icons/fa6";
 import { RiCommunityFill, RiGovernmentLine } from "react-icons/ri";
 
 export function WhyPartnersChooseUs() {
   const reasons = [
-    { text: "Truly Global Reach", icon: <CiGlobe /> },
+    { text: "Unlock Global Opportunity. Accelerate Regional Impact.", icon: <CiGlobe /> },
     {
-      text: "Strong Government & Enterprise Alliances",
+      text: " Forge High-Value International Partnerships",
       icon: <RiGovernmentLine />,
     },
-    { text: "AI Innovation That Works In Real Life", icon: <FaRobot /> },
+    { text: "Experience Next-Gen U.S. Innovation", icon: <FaRobot /> },
     {
-      text: "World-Class Healthcare & Workforce Expertise",
+      text: "Gain insights from top innovators and sector experts through immersive showcases and hands-on learning sessions.",
       icon: <FaUserDoctor />,
     },
-    { text: "Community Impact at Scale", icon: <RiCommunityFill /> },
-    { text: "Faith-rooted Integrity and Purpose", icon: <FaCross /> },
+    { text: "Expand into Asia’s Fastest-Growing Markets",
+      icon: <RiCommunityFill /> },
+    { text: "Attend Live Demonstrations & Masterclasses", icon: <FaBriefcase /> },
   ];
 
   return (
@@ -46,7 +47,7 @@ export function WhyPartnersChooseUs() {
       <Text fontSize="5xl" color="white"
                       textShadow="0 0 12px rgba(255,255,255,0.6)">
                         <br></br>
-        Why Partners Choose Us
+        Why Attend the U.S.–Asia Innovation Bridge Expo
       </Text>
       <SimpleGrid columns={{ base: 1, md: 3 }} gap={3}>
         {reasons.map((reason, index) => {

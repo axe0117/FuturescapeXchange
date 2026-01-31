@@ -10,8 +10,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Home | Alagar Ally International",
-  description: "Algar Ally International is a visionary global cross-border accelerator committed to accelerating progress through the fusion of intelligent technologies and human-centered services. We partner with governments, businesses, and communities to deliver transformative solutions that address real-world challenges—at scale and across borders."
+  title: "Home | Futurescape Xchange",
+  description: "US and Asia Innovation Summit"
 };
 
 export default function RootLayout({

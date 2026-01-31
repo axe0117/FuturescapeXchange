@@ -34,17 +34,17 @@ export function WhoWeAre() {
         px={3}
       >
         <Text fontSize="5xl" color="rgb(7, 33, 54)" fontWeight="extrabold">
-          Who is Algar Ally <br></br>
-          International
+          Welcome to <br></br>
+          Futurescape Xchange
         </Text>
 
         <Flex flexDir="column" gap={4}>
+          <Text fontSize="2xl" color="rgb(7, 33, 54) " fontWeight="extrabold">
+            Our Mission Statement
+          </Text>
           <Text maxW="600px" color="rgb(7, 33, 54) " fontWeight="extrabold">
-            Algar Ally International is a visionary global cross-border accelerator 
-            committed to accelerating progress through the fusion of intelligent 
-            technologies and human-centered services. We partner with governments, 
-            businesses, and communities to deliver transformative solutions that 
-            address real-world challenges—at scale and across borders.
+            To accelerate sustainable global progress by introducing the best of U.S.made innovations, products, and industries to Asia empowering governments, businesses, and communities through transformative technologies, trusted consumer goods, and strategic partnerships. 
+            <br /><br />By showcasing U.S. excellence in sectors such as advanced manufacturing, clean energy, digital health, agri-tech, education technology, and premium food and agricultural products, we foster a dynamic exchange that drives mutual prosperity, strengthens economic resilience, and creates enduring value for both the United States and its Asian partners.
           </Text>
 
           <Link href="/about">

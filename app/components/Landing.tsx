@@ -35,24 +35,38 @@ export function Landing() {
           fontSize="2xl"
           fontWeight="extrabold"
           textShadow="0 0 20px rgba(255,255,255,2.0)"
+          color="black"
         >
-          Global Vision.
+          Innovating Tomorrow,
         </Text>
         <Text
           fontSize="2xl"
           fontWeight="extrabold"
           textShadow="0 0 20px rgba(255,255,255,2.0)"
+          color="black"
         >
-          Human Impact.
+          Connecting Nations.
+
         </Text>
         <Text
           fontSize={{ base: "2xl", md: "6xl" }}
-          color="white"
+          color="black"
           textShadow="0 0 20px rgba(255,255,255,2.0)"
           //like 2.6 hog
           border="none"
         >
-          ALGAR ALLY INTERNATIONAL
+          FUTURESCAPE XCHANGE
+
+        </Text>
+        <Text
+          fontSize={{ base: "2xl", md: "6xl" }}
+          color="black"
+          textShadow="0 0 20px rgba(255,255,255,2.0)"
+          //like 2.6 hog
+          border="none"
+        >
+          U.S.–ASIA INNOVATION BRIDGE SUMMIT 
+
         </Text>
 
         <Flex gap={2} flexDir={{ base: "column", md: "row" }}>
@@ -71,7 +85,7 @@ export function Landing() {
                 transition: "0.3s"
               }}
             >
-              Explore Our Solutions
+              Register to Attend
             </Button>
           </Link>
 
@@ -90,7 +104,7 @@ export function Landing() {
               transition: "0.3s"
             }}
           >
-            Get Involved with Us
+            Book a Stand
           </Button>
           </Link>
 
