@@ -13,47 +13,9 @@ export function WhatWeDo() {
   const items = [
     {
       number: "01",
-      title: "AI Healthcare Integration",
+      title: "Title",
       list: [
-        "Smart EMR systems",
-        "Telehealth platforms",
-        "AI diagnostics & analytics"
-      ]
-    },
-    {
-      number: "02",
-      title: "BPO & Call Center Operations",
-      list: [
-        "Multilingual support",
-        "Healthcare RCM",
-        "Customer success & tech support"
-      ]
-    },
-    {
-      number: "03",
-      title: "Medical & International Workforce Recruitment",
-      list: [
-        "Nurses, Physical Therapists",
-        "Credentialing pipelines",
-        "US/Canada placements"
-      ]
-    },
-    {
-      number: "04",
-      title: "Smart Housing & Community Development",
-      list: [
-        "AI-enabled housing",
-        "Affordable sustainable townships",
-        "Medical community integration"
-      ]
-    },
-    {
-      number: "05",
-      title: "Faith Ministry & Community Empowerment",
-      list: [
-        "Missions",
-        "Leadership Development",
-        "Family and spiritual programs"
+        "content"
       ]
     }
   ];
@@ -61,7 +23,7 @@ export function WhatWeDo() {
   return (
     <Box maxWidth="1280px" mx="auto" p={3} my="3%" id="solutions">
       <Text fontSize="5xl" color="rgb(7, 33, 54)">
-        What We Do
+        Our commitment to Vision 2030 is lucid, with FutureScape US-ASEAN is committed to:
       </Text>
       <SimpleGrid columns={{ base: 1, md: 4, lg: 4}} gap={3}>
         {items.map((content, index) => (
@@ -98,18 +60,6 @@ export function WhatWeDo() {
             </Card.Root>
           </GridItem>
         ))}
-         <GridItem colSpan={{ base: 2, md: 2}} display={{ base: 'none', md: 'block' }}>
-                   <Image src="livingroom.jpg" />
-                 </GridItem>
-                 <GridItem colSpan={{ base: 2, md: 1}} display={{ base: 'none', md: 'block' }}>
-                   <Image src="echo.jpg" />
-                 </GridItem>
-                 <GridItem colSpan={{ base: 2, md: 2}} display={{ base: 'none', md: 'block' }}>
-                   <Image src="cityifgood.png" />
-                 </GridItem>
-                 <GridItem colSpan={{ base: 2, md: 2}} display={{ base: 'none', md: 'block' }}>
-                   <Image src="housephone.jpg" />
-                 </GridItem>
       </SimpleGrid>
       
     </Box>

@@ -39,12 +39,13 @@ export function WhoWeAre() {
         </Text>
 
         <Flex flexDir="column" gap={4}>
-          <Text fontSize="2xl" color="rgb(7, 33, 54) " fontWeight="extrabold">
-            Our Mission Statement
-          </Text>
           <Text maxW="600px" color="rgb(7, 33, 54) " fontWeight="extrabold">
-            To accelerate sustainable global progress by introducing the best of U.S.made innovations, products, and industries to Asia empowering governments, businesses, and communities through transformative technologies, trusted consumer goods, and strategic partnerships. 
-            <br /><br />By showcasing U.S. excellence in sectors such as advanced manufacturing, clean energy, digital health, agri-tech, education technology, and premium food and agricultural products, we foster a dynamic exchange that drives mutual prosperity, strengthens economic resilience, and creates enduring value for both the United States and its Asian partners.
+          This event brings tiogether global innovators, industry keaders, and government decision makers shaping the future of Asia's rapidly expanding economies.
+          More than just an exhibition, this premier B2B event is a tranformative movement dedicateed to accelerate technological innovattion in several sectors.
+          <br></br><br></br>
+          Asia remains the world's fastest growing economic region
+          , driven by large-scale digital transformation, infrastructure modernization, healthcare expansion, and launching demand
+           for advanced automations.
           </Text>
 
           <Link href="/about">
@@ -74,7 +75,7 @@ export function WhoWeAre() {
               fontWeight="bold"
               _hover={{ backgroundColor: "rgb(12, 60, 96)", color: "white" }}
             >
-              Find Out What We're Up To
+              Become an Exhibitor
             </Button>
           </Link>
         </Flex>

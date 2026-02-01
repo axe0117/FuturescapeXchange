@@ -3,7 +3,16 @@ import Link from "next/link";
 
 export function Landing() {
   return (
-    <Box position="relative" width="100%" height="100vh" overflow="hidden">
+    <Box position="relative" width="100%" height="100vh" overflow="hidden"
+    data-state="open"
+  _open={{
+    animationName: "fade-in, scale-in",
+    animationDuration: "300ms",
+  }}
+  _closed={{
+    animationName: "fade-out, scale-out",
+    animationDuration: "120ms",
+  }}>
       <video
         autoPlay
         loop

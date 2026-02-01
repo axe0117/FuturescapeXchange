@@ -42,7 +42,7 @@ export function NavigationBar() {
         <Portal>
           <Drawer.Backdrop />
           <Drawer.Positioner>
-            <Drawer.Content backgroundColor="rgb(121, 0, 101)" userSelect="none">
+            <Drawer.Content backgroundColor="rgb(6, 165, 152)" userSelect="none">
               <Drawer.Body p={12}>
                 <Link href="/">
                   <Text fontSize="2xl" fontWeight="bold" color="white" mb="20%">
@@ -52,8 +52,8 @@ export function NavigationBar() {
                 <Flex gap={12} flexDir="column">
                   {[
                     { name: "About", url: "/about" },
-                    { name: "Explore Our Solutions", url: "/#solutions" },
-                    { name: "Join Our Events", url: "/slides" }
+                    { name: "Register to Attend", url: "/#solutions" },
+                    { name: "Book a Table", url: "/slides" }
                   ].map((link) => (
                     <Link href={link.url} key={link.url}>
                       <Text
@@ -95,7 +95,7 @@ export function NavigationBar() {
         >
           <Flex flexDir="row" alignItems="center" gap={2}>
             <Link href="/">
-              <Image src="/Futurescapelogo.png" alt="Logo" width="200px" height="100px" />
+              <Image src="/Futurescapelogo.png" alt="Logo" width="250px" height="150px" />
             </Link>
           </Flex>
           <Icon

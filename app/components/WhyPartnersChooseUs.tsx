@@ -47,7 +47,7 @@ export function WhyPartnersChooseUs() {
       <Text fontSize="5xl" color="white"
                       textShadow="0 0 12px rgba(255,255,255,0.6)">
                         <br></br>
-        Why Attend the U.S.–Asia Innovation Bridge Expo
+        Why Attend the U.S.–Asia Innovation Bridge Expo?
       </Text>
       <SimpleGrid columns={{ base: 1, md: 3 }} gap={3}>
         {reasons.map((reason, index) => {
@@ -76,9 +76,6 @@ export function WhyPartnersChooseUs() {
           
         })}
         <br></br>
-        <GridItem colSpan={{ base: 3}} display ={{base: 'none', md: 'block' }}>
-                  <Image src="/walltablet.png"/>
-                </GridItem>
       </SimpleGrid>
     </Flex>
     </Box>
