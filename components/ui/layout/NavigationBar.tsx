@@ -42,7 +42,7 @@ export function NavigationBar() {
         <Portal>
           <Drawer.Backdrop />
           <Drawer.Positioner>
-            <Drawer.Content backgroundColor="rgb(6, 165, 152)" userSelect="none">
+            <Drawer.Content backgroundColor="#3A0B4B" userSelect="none">
               <Drawer.Body p={12}>
                 <Link href="/">
                   <Text fontSize="2xl" fontWeight="bold" color="white" mb="20%">
@@ -77,7 +77,7 @@ export function NavigationBar() {
       </Drawer.Root>
       <Box
         py={8}
-        backgroundColor="rgb(7, 33, 54)"
+        backgroundColor="#0D1E4A"
         position="sticky"
         top={0}
         zIndex={999}

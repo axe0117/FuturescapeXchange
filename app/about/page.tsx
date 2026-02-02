@@ -15,7 +15,7 @@ export default function About() {
         About
       </Text>
       <Text color="rgb(7, 33, 54)" fontSize="4xl">
-        Algar Ally International is...
+        Futurescape Xchange is...
       </Text>
       <SimpleGrid columns={{ base: 1, md: 4 }} gap={3}>
         <GridItem colSpan={{ base: 2 }}>
@@ -34,33 +34,20 @@ export default function About() {
               continents, uniting diverse stakeholders through strategic partnerships 
               that turn bold ideas into measurable outcomes.
             </Text>
-            <Text>
-              At our core, Algar Ally is more than a connector—
-              <br />
-              <Span fontWeight="bold" textDecor="underline" fontSize="xl">
-                We are a catalyst for global resilience, equity, and advancement.
-              </Span>
-            </Text>
-
+            
             <Text color="rgb(7, 33, 54)" fontSize="4xl">
               Mission Statement
             </Text>
             <Text>
-              To accelerate global progress by integrating intelligent technologies 
-              with human-centered services—empowering governments, businesses, and communities 
-              through transformative solutions and visionary partnerships. Algar Ally International 
-              exists to bridge innovation with impact, delivering sustainable, scalable systems that 
-              uplift lives, strengthen institutions, and drive inclusive growth across borders.
+              To accelerate sustainable global progress by introducing the best of U.S.made innovations,
+               products, and industries to Asia empowering governments, businesses, and communities through 
+               transformative technologies, trusted consumer goods, and strategic partnerships. 
+               By showcasing U.S. excellence in sectors such as advanced manufacturing, clean energy, 
+               digital health, agri-tech, education technology, and premium food and agricultural products, 
+               we foster a dynamic exchange that drives mutual prosperity, strengthens economic resilience, 
+               and creates enduring value for both the United States and its Asian partners.
             </Text>
 
-            <Text color="rgb(7, 33, 54)" fontSize="4xl">
-              Vision Statement
-            </Text>
-            <Text>
-              To be the world’s most trusted bridge between innovation and impact—empowering nations, 
-              industries, and communities to thrive through transformative solutions, inclusive 
-              collaboration, and sustainable growth.
-            </Text>
             <Span></Span>
           </VStack>
         </GridItem>
