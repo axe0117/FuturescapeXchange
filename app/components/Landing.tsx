@@ -13,6 +13,7 @@ export function Landing() {
     animationName: "fade-out, scale-out",
     animationDuration: "120ms",
   }}>
+    
       <video
         autoPlay
         loop
@@ -64,7 +65,7 @@ export function Landing() {
           //like 2.6 hog
           border="none"
         >
-          FUTURESCAPE XCHANGE
+          FUTUREXCHANGE
 
         </Text>
         <Text

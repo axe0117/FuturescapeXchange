@@ -116,7 +116,7 @@ color="white">
       py="2%"
       spacing="48px"
       slidesPerPage={3}
-      color="white"
+      color="black"
 
     >
        

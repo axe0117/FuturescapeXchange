@@ -59,7 +59,7 @@ export function WhatWeDo() {
             <Card.Root
               borderRadius="black"
               height="100%"
-              backgroundColor="rgb(12, 60, 96)"
+              backgroundColor="#0D1E4A"
             >
               <Card.Body p={6} gap={2}>
                 <Box height="100px">

@@ -35,7 +35,7 @@ export function WhoWeAre() {
       >
         <Text fontSize="5xl" color="rgb(7, 33, 54)" fontWeight="extrabold">
           Welcome to <br></br>
-          Futurescape Xchange
+          FutureXchange
         </Text>
 
         <Flex flexDir="column" gap={4}>
