@@ -3,16 +3,15 @@ import {
   Image,
   Text,
   Button,
-  Link
+  Link,
+  Box
 } from "@chakra-ui/react";
 
 export default function Slides() {
   return (
-    <Flex mt="2%" p={3} flexDir="column" maxWidth="1260px" mx="auto" gap={3}>
-      <Text fontSize="5xl" color="rgb(7, 33, 54)">
-              Events
-            </Text>
-      {/* <Image src="/Slide1.PNG/">
+    <Box bg="black">
+    <Flex mt="2%" p={3} flexDir="column" maxWidth="1260px" mx="auto" gap={3} bg="black">
+      <Image src="/Slide1.PNG/">
 
       </Image>
       <Image src="/Slide2.PNG/">
@@ -106,7 +105,8 @@ export default function Slides() {
           >
             Exhibitor Application
           </Button>
-          </Link> */}
+          </Link>
     </Flex>
+    </Box>
   );
 }
