@@ -19,7 +19,7 @@ export function AlgarFramework() {
         justifyContent="center"
         textAlign="center"
         width="100%"
-        backgroundColor="#4476f5"
+        backgroundColor="#000000"
         color="white"
       >
        <Text fontSize="5xl" color="rgb(255, 255, 255)" fontWeight="extrabold">
@@ -102,9 +102,9 @@ color="white">
         justifyContent="center"
         textAlign="center"
         width="100%"
-        backgroundColor="#3A0B4B"
+        backgroundColor="#ffffff"
       >
-       <Text fontSize="5xl" color="rgb(255, 255, 255)" fontWeight="extrabold">
+       <Text fontSize="5xl" color="rgb(0, 0, 0)" fontWeight="extrabold">
           2026 Visitors
         </Text>
         <br></br>
@@ -134,13 +134,13 @@ color="white">
 
       <Carousel.Control justifyContent="center" gap="4">
         <Carousel.PrevTrigger asChild>
-          <IconButton size="xs" variant="ghost" color="white">
+          <IconButton size="xs" variant="ghost">
             <LuChevronLeft />
           </IconButton>
         </Carousel.PrevTrigger>
 
         <Carousel.AutoplayTrigger asChild>
-          <IconButton aria-label="Toggle autoplay" size="sm" variant="ghost" color="white">
+          <IconButton aria-label="Toggle autoplay" size="sm" variant="ghost">
             <Carousel.AutoplayIndicator
               paused={<LuPause />}
               play={<LuPlay />}
@@ -148,7 +148,7 @@ color="white">
           </IconButton>
         </Carousel.AutoplayTrigger>
         <Carousel.NextTrigger asChild>
-          <IconButton size="xs" variant="ghost" color="white">
+          <IconButton size="xs" variant="ghost">
             <LuChevronRight />
           </IconButton>
         </Carousel.NextTrigger>

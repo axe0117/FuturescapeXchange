@@ -10,7 +10,7 @@ import {
 export default function Slides() {
   return (
     <Box bg="black">
-    <Flex mt="2%" p={3} flexDir="column" maxWidth="1260px" mx="auto" gap={3} bg="black">
+    <Flex p={3} flexDir="column" maxWidth="1260px" mx="auto" gap={3} bg="black">
       <Image src="/Slide1.PNG/">
 
       </Image>
