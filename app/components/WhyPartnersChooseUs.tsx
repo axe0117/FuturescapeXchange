@@ -32,7 +32,7 @@ export function WhyPartnersChooseUs() {
   return (
     <Box
     alignContent="center"
-    backgroundColor="rgb(12, 60, 96)"
+    backgroundColor="black"
     width="100%">
     <Flex
       my="3%"
@@ -55,12 +55,12 @@ export function WhyPartnersChooseUs() {
             <GridItem key={index}>
               <Card.Root
                 height="100%"
-                borderRadius="none"
+                borderRadius="black"
                 background="none"
                 border="none"
               >
                 <Card.Body p={3} alignItems="center">
-                  <Icon size="2xl" width="75px" height="75px">
+                  <Icon size="2xl" width="75px" height="75px" color="white">
                     {reason.icon}
                   </Icon>
                   <Text textAlign="center" fontWeight="bold" fontSize="xl"

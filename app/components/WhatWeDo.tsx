@@ -57,7 +57,7 @@ export function WhatWeDo() {
         {items.map((content, index) => (
           <GridItem key={index}>
             <Card.Root
-              borderRadius="none"
+              borderRadius="black"
               height="100%"
               backgroundColor="rgb(12, 60, 96)"
             >
