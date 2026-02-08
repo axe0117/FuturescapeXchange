@@ -41,7 +41,7 @@ export default function About() {
           </VStack>
         </GridItem>
         <GridItem colSpan={{ base: 2 }}>
-          {/* <Image src="/about.jpg" /> */}git
+          {/* <Image src="/about.jpg" /> */}
         </GridItem>
       </SimpleGrid>
 
@@ -92,6 +92,7 @@ export default function About() {
           </VStack>
         </GridItem>
       </SimpleGrid>
+      
 <Box height="500px" overflow="hidden" perspective="500px">
     <HStack
       gap="4"
@@ -150,21 +151,21 @@ const MarqueeItems = (props: { images: string[] }) => {
 
 const imagesColumn1 = [
   "/techevent1.jpg",
-  "https://picsum.photos/seed/img2/280/200",
-  "https://picsum.photos/seed/img3/280/200",
-  "https://picsum.photos/seed/img4/280/200",
+  "/techevent2.jpg",
+  "/techevent3.jpg",
+  "/techevent4.jpg",
 ]
 
 const imagesColumn2 = [
-  "https://picsum.photos/seed/img5/280/200",
-  "https://picsum.photos/seed/img6/280/200",
-  "https://picsum.photos/seed/img7/280/200",
-  "https://picsum.photos/seed/img8/280/200",
+   "/techevent5.jpg",
+   "/techevent6.jpg",
+   "/techevent7.jpg",
+   "/techevent8.jpg",
 ]
 
 const imagesColumn3 = [
-  "https://picsum.photos/seed/img9/280/200",
-  "https://picsum.photos/seed/img10/280/200",
-  "https://picsum.photos/seed/img11/280/200",
-  "https://picsum.photos/seed/img12/280/200",
+  "/techevent9.jpeg",
+  "/techevent10.jpg",
+  "/techevent6.jpg",
+  "/techevent7.jpg",
 ]
