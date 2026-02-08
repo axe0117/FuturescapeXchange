@@ -29,7 +29,7 @@ export function Landing() {
           zIndex: "-1"
         }}
       >
-        <source src="/earth_compressed_min.mp4" type="video/mp4" />
+        <source src="/crowd.mp4" type="video/mp4" />
       </video>
       <Flex
         mt={{ base: "50%", md: "10%" }}
