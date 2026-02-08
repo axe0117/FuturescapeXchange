@@ -41,7 +41,7 @@ export default function About() {
           </VStack>
         </GridItem>
         <GridItem colSpan={{ base: 2 }}>
-          <Image src="/about.jpg" />
+          {/* <Image src="/about.jpg" /> */}git
         </GridItem>
       </SimpleGrid>
 
@@ -149,7 +149,7 @@ const MarqueeItems = (props: { images: string[] }) => {
 }
 
 const imagesColumn1 = [
-  "https://picsum.photos/seed/img1/280/200",
+  "/techevent1.jpg",
   "https://picsum.photos/seed/img2/280/200",
   "https://picsum.photos/seed/img3/280/200",
   "https://picsum.photos/seed/img4/280/200",
