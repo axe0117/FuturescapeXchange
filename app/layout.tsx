@@ -10,7 +10,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Home | Futurescape Xchange",
+  title: "Home | FutureXchange",
   description: "US and Asia Innovation Summit"
 };
 
