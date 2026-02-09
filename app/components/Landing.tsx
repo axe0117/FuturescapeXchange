@@ -80,7 +80,7 @@ export function Landing() {
         </Text>
 
         <Flex gap={2} flexDir={{ base: "column", md: "row" }}>
-          <Link href="/#solutions">
+          <Link href="/slides#reg">
             <Button
               boxShadow="0 0 12px rgba(255,255,255,0.6)"
               color="rgb(12, 60, 96)"
@@ -99,7 +99,7 @@ export function Landing() {
             </Button>
           </Link>
 
-          <Link href="/slides">
+          <Link href="/slides#reg">
           <Button
             boxShadow="0 0 12px rgba(255,255,255,0.6)"
             color="rgb(12, 60, 96)"

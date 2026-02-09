@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <Box backgroundColor="#0D1E4A">
+    <Box backgroundColor="#0D1E4Abun">
       <Flex
         flexDir="column"
         maxWidth="1280px"

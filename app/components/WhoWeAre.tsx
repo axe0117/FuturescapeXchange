@@ -40,8 +40,8 @@ export function WhoWeAre() {
 
         <Flex flexDir="column" gap={4}>
           <Text maxW="600px" color="rgb(7, 33, 54) " fontWeight="extrabold">
-          This event brings together global innovators, industry keaders, and government decision makers shaping the future of Asia's rapidly expanding economies.
-          More than just an exhibition, this premier B2B event is a tranformative movement dedicateed to accelerate technological innovattion in several sectors.
+          This event brings together global innovators, industry leaders, and government decision makers shaping the future of Asia's rapidly expanding economies.
+          More than just an exhibition, this premier B2B event is a tranformative movement dedicateed to accelerate technological innovation in several sectors.
           <br></br><br></br>
           Asia remains the world's fastest growing economic region
           , driven by large-scale digital transformation, infrastructure modernization, healthcare expansion, and launching demand

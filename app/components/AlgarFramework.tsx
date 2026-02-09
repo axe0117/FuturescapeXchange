@@ -1,5 +1,5 @@
-import { AbsoluteCenter, Card, Center, Container, Flex, GridItem, SimpleGrid, Text } from "@chakra-ui/react";
-import { Carousel, HStack, IconButton, Box } from "@chakra-ui/react"
+import { Center, Container, Flex, GridItem, SimpleGrid, Text } from "@chakra-ui/react";
+import { Icon, Carousel, HStack, IconButton, Box, Stack, Image, Badge, Span} from "@chakra-ui/react"
 import {
   LuChevronLeft,
   LuChevronRight,
@@ -33,21 +33,19 @@ export function AlgarFramework() {
       autoplay={{ delay: 5000 }}
       slideCount={items.length}
       mx="auto"
-      maxW="x1"
+      maxW="2x1"
       py="2%"
-      spacing="48px"
-      slidesPerPage={3}
-
+      position="relative"
+      gap="4"
+      slidesPerPage={5}
     >
        
       <HStack textStyle="sm" mb="4">
       </HStack>
       <Carousel.ItemGroup>
-        {items.map((_, index) => (
-          <Carousel.Item key={index} index={index}>
-            <Box w="100%" h="300px" rounded="lg" fontSize="2.5rem">
-              {index + 1}
-            </Box>
+        {speakers.map((speaker, index) => (
+          <Carousel.Item key={speaker.id} index={index}>
+            <SpeakerCard data={speaker} />
           </Carousel.Item>
         ))}
       </Carousel.ItemGroup>
@@ -86,61 +84,58 @@ color="white">
       </Flex>
       
       <Container textAlign="center">
-        ASEAN economies are eager to adopt solutions that improve efficiency, sustainability,
-         and digital readiness - creating ideal conditions for pilot programs, early deployments, and long term
-          partnerships. - Dr. Vilmar Kapur
+        Quote of all time
           </Container>
          
           <Flex justifyContent="center" py="2%">
           <FaQuoteRight size="50px"/>
           </Flex>
  </Box>
+ {/*----------------------------------------------------------------------------- VISITORS------------------------------------------------------------*/}
     <Center>
-      
-      <Box 
+<Box 
         py="2%"
         justifyContent="center"
         textAlign="center"
         width="100%"
         backgroundColor="#ffffff"
+        color="white"
       >
        <Text fontSize="5xl" color="rgb(0, 0, 0)" fontWeight="extrabold">
           2026 Visitors
         </Text>
-        <br></br>
+
+
     <Carousel.Root
       autoplay={{ delay: 5000 }}
       slideCount={items.length}
       mx="auto"
-      maxW="x1"
+      maxW="2x1"
       py="2%"
-      spacing="48px"
-      slidesPerPage={3}
-      color="black"
-
+      position="relative"
+      gap="4"
+      slidesPerPage={5}
     >
        
       <HStack textStyle="sm" mb="4">
       </HStack>
       <Carousel.ItemGroup>
-        {items.map((_, index) => (
-          <Carousel.Item key={index} index={index}>
-            <Box w="100%" h="300px" rounded="lg" fontSize="2.5rem">
-              {index + 1}
-            </Box>
+        {visitors.map((visitor, index) => (
+          <Carousel.Item key={visitor.id} index={index}>
+            <VisitorCard data={visitor} />
           </Carousel.Item>
         ))}
       </Carousel.ItemGroup>
 
-      <Carousel.Control justifyContent="center" gap="4">
+     <Carousel.Control justifyContent="center" gap="4">
         <Carousel.PrevTrigger asChild>
-          <IconButton size="xs" variant="ghost">
+          <IconButton size="xs" variant="ghost" color="black">
             <LuChevronLeft />
           </IconButton>
         </Carousel.PrevTrigger>
 
         <Carousel.AutoplayTrigger asChild>
-          <IconButton aria-label="Toggle autoplay" size="sm" variant="ghost">
+          <IconButton aria-label="Toggle autoplay" size="sm" variant="ghost" color="black">
             <Carousel.AutoplayIndicator
               paused={<LuPause />}
               play={<LuPlay />}
@@ -148,14 +143,215 @@ color="white">
           </IconButton>
         </Carousel.AutoplayTrigger>
         <Carousel.NextTrigger asChild>
-          <IconButton size="xs" variant="ghost">
+          <IconButton size="xs" variant="ghost" color="black">
             <LuChevronRight />
           </IconButton>
         </Carousel.NextTrigger>
       </Carousel.Control>
+
     </Carousel.Root>
     </Box>
     </Center>
     </div>
   )
+  
 }
+
+//////////SPEAKER STUFF
+interface SpeakerCardProps {
+  data: Speaker
+}
+
+const SpeakerCard = ({ data }: SpeakerCardProps) => (
+  <Stack gap="3">
+    <Box position="relative" justifyItems="center">
+      <Image
+        src={data.image}
+        alt={data.title}
+        rounded="l2"
+        w="250px"
+        h="250px"
+        objectFit="cover"
+        draggable={false}
+      />
+
+    </Box>
+    <Stack gap="1">
+      <Span fontWeight="semibold" textStyle="sm">
+        {data.title}
+      </Span>
+      <Span  textStyle="xs">{data.desc}</Span>
+    </Stack>
+  </Stack>
+)
+
+interface Speaker {
+  id: number
+  title: string
+  image: string
+  desc: string
+}
+
+const speakers: Speaker[] = [
+  {
+    id: 1,
+    title: "Deepak Chopra",
+    image: "/deepak.jpg",
+    desc: "Author"
+  },
+  
+  {
+    id: 2,
+    title: "Jim Himmes",
+    image: "/himmes.jfif",
+    desc: "Source Global CEO"
+  },
+  {
+    id: 3,
+    title: "Leonardo DiCaprio",
+    image: "leo.jpg",
+    desc: "Actor and Producer"
+  },
+  {
+    id: 4,
+    title: "Eric Trump",
+    image: "eric.jfif",
+    desc: "American Businessman"
+  },
+  {
+    id: 5,
+    title: "Elon Musk",
+    image: "elon.jpg",
+    desc: "Tesla and SpaceX CEO"
+  },
+]
+
+
+/////////// VISITOR STUFF
+
+interface VisitorCardProps {
+  data: Visitor
+}
+
+const VisitorCard = ({ data }: VisitorCardProps) => (
+  <Stack gap="3">
+    <Box position="relative" justifyItems="center">
+      <Image
+        src={data.image}
+        alt={data.title}
+        rounded="l2"
+        w="250px"
+        h="250px"
+        objectFit="contain"
+        draggable={false}
+      />
+
+    </Box>
+    <Stack gap="1">
+      <Span color="black" fontWeight="semibold" textStyle="sm">
+        {data.title}
+      </Span>
+    </Stack>
+  </Stack>
+)
+
+interface Visitor {
+  id: number
+  title: string
+  image: string
+}
+
+const visitors: Visitor[] = [
+  {
+    id: 1,
+    title: "Medtronic",
+    image: "/medtronic.jpg",
+  },
+  
+  {
+    id: 2,
+    title: "J&J Medtech",
+    image: "/jjmedtech.jpg",
+  },
+  {
+    id: 3,
+    title: "Siemens",
+    image: "siemens.png",
+  },
+  {
+    id: 4,
+    title: "Medline Distributor",
+    image: "medline.png",
+  },
+  {
+    id: 5,
+    title: "Stryker",
+    image: "stryker.png",
+  },
+    {
+    id: 6,
+    title: "BD",
+    image: "BD.jpg",
+  },
+    {
+    id: 7,
+    title: "GE Healthcare",
+    image: "gehealthcare.png",
+  },
+    {
+    id: 8,
+    title: "Philips",
+    image: "philips.jpg",
+  },
+    {
+    id: 9,
+    title: "Abbott",
+    image: "abbott.jpg",
+  },
+    {
+    id: 10,
+    title: "Roche Diagnostics",
+    image: "roche.png",
+  },
+    {
+    id: 11,
+    title: "Boston Scientific",
+    image: "boston.png",
+  },
+  {
+    id: 12,
+    title: "Cardinal Health",
+    image: "cardinal.jpg",
+  },
+  {
+    id: 13,
+    title: "B Braun Medical Supplies",
+    image: "bbraun.png",
+  },
+  {
+    id: 14,
+    title: "Lifeline Diagnostic",
+    image: "lifeline.png",
+  },
+  {
+    id: 15,
+    title: "Transmedic Philippines",
+    image: "transmedic.png",
+  },
+  {
+    id: 16,
+    title: "Equilife Medical Equipment",
+    image: "equilife.jfif",
+  },
+  {
+    id: 17,
+    title: "IDS Medical Systems",
+    image: "ids.jfif",
+  },
+  {
+    id: 18,
+    title: "AAMI",
+    image: "aami.png",
+  },
+
+]

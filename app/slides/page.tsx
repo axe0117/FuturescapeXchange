@@ -69,7 +69,7 @@ export default function Slides() {
 
       </Image>
 
-      <Link href="https://form.jotform.com/253626865726065">
+      <Link href="https://form.jotform.com/253626865726065" id="reg">
           <Button
             boxShadow="0 0 12px rgba(255,255,255,0.6)"
             color="rgb(12, 60, 96)"
