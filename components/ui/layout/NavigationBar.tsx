@@ -77,7 +77,7 @@ export function NavigationBar() {
       </Drawer.Root>
       <Box
         py={8}
-        backgroundColor="#0D1E4A"
+        backgroundColor="#020f27"
         position="sticky"
         top={0}
         zIndex={999}
