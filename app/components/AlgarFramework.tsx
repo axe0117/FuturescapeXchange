@@ -29,7 +29,7 @@ export function AlgarFramework() {
           Speakers
         </Text>
 
-    <Carousel.Root
+    {/* <Carousel.Root
       autoplay={{ delay: 5000 }}
       slideCount={items.length}
       mx="auto"
@@ -72,7 +72,7 @@ export function AlgarFramework() {
         </Carousel.NextTrigger>
       </Carousel.Control>
     </Carousel.Root>
-    </Box>
+    </Box> */}
 
     </Center>
 <Box
@@ -158,73 +158,73 @@ color="white">
 }
 
 //////////SPEAKER STUFF
-interface SpeakerCardProps {
-  data: Speaker
-}
+// interface SpeakerCardProps {
+//   data: Speaker
+// }
 
-const SpeakerCard = ({ data }: SpeakerCardProps) => (
-  <Stack gap="3">
-    <Box position="relative" justifyItems="center">
-      <Image
-        src={data.image}
-        alt={data.title}
-        rounded="l2"
-        w="250px"
-        h="250px"
-        objectFit="cover"
-        draggable={false}
-      />
+// const SpeakerCard = ({ data }: SpeakerCardProps) => (
+//   <Stack gap="3">
+//     <Box position="relative" justifyItems="center">
+//       <Image
+//         src={data.image}
+//         alt={data.title}
+//         rounded="l2"
+//         w="250px"
+//         h="250px"
+//         objectFit="cover"
+//         draggable={false}
+//       />
 
-    </Box>
-    <Stack gap="1">
-      <Span fontWeight="semibold" textStyle="sm">
-        {data.title}
-      </Span>
-      <Span  textStyle="xs">{data.desc}</Span>
-    </Stack>
-  </Stack>
-)
+//     </Box>
+//     <Stack gap="1">
+//       <Span fontWeight="semibold" textStyle="sm">
+//         {data.title}
+//       </Span>
+//       <Span  textStyle="xs">{data.desc}</Span>
+//     </Stack>
+//   </Stack>
+// )
 
-interface Speaker {
-  id: number
-  title: string
-  image: string
-  desc: string
-}
+// interface Speaker {
+//   id: number
+//   title: string
+//   image: string
+//   desc: string
+// }
 
-const speakers: Speaker[] = [
-  {
-    id: 1,
-    title: "Deepak Chopra",
-    image: "/deepak.jpg",
-    desc: "Author"
-  },
+// const speakers: Speaker[] = [
+//   {
+//     id: 1,
+//     title: "Deepak Chopra",
+//     image: "/deepak.jpg",
+//     desc: "Author"
+//   },
   
-  {
-    id: 2,
-    title: "Jim Himmes",
-    image: "/himmes.jfif",
-    desc: "Source Global CEO"
-  },
-  {
-    id: 3,
-    title: "Leonardo DiCaprio",
-    image: "leo.jpg",
-    desc: "Actor and Producer"
-  },
-  {
-    id: 4,
-    title: "Eric Trump",
-    image: "eric.jfif",
-    desc: "American Businessman"
-  },
-  {
-    id: 5,
-    title: "Elon Musk",
-    image: "elon.jpg",
-    desc: "Tesla and SpaceX CEO"
-  },
-]
+//   {
+//     id: 2,
+//     title: "Jim Himmes",
+//     image: "/himmes.jfif",
+//     desc: "Source Global CEO"
+//   },
+//   {
+//     id: 3,
+//     title: "Leonardo DiCaprio",
+//     image: "leo.jpg",
+//     desc: "Actor and Producer"
+//   },
+//   {
+//     id: 4,
+//     title: "Eric Trump",
+//     image: "eric.jfif",
+//     desc: "American Businessman"
+//   },
+//   {
+//     id: 5,
+//     title: "Elon Musk",
+//     image: "elon.jpg",
+//     desc: "Tesla and SpaceX CEO"
+//   },
+// ]
 
 
 /////////// VISITOR STUFF
