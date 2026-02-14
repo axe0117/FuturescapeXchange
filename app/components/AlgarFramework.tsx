@@ -84,7 +84,7 @@ color="white">
       </Flex>
       
       <Container textAlign="center">
-        Quote of all time
+        
           </Container>
          
           <Flex justifyContent="center" py="2%">
