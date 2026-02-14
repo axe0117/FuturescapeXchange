@@ -14,7 +14,7 @@ export function AlgarFramework() {
   return (
     <div>
     <Center>
-      <Box 
+      {/* <Box 
         py="2%"
         justifyContent="center"
         textAlign="center"
@@ -27,7 +27,7 @@ export function AlgarFramework() {
         </Text>
         <Text fontSize="2xl" color="rgb(255, 255, 255)" fontWeight="extrabold">
           Speakers
-        </Text>
+        </Text> */}
 
     {/* <Carousel.Root
       autoplay={{ delay: 5000 }}
