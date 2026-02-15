@@ -53,20 +53,19 @@ export function WhatWeDo() {
       <Text fontSize="5xl" color="rgb(7, 33, 54)">
         Core Goals of the U.S.–Asia Innovation Bridge Initiative:
       </Text>
-      <SimpleGrid columns={{ base: 1, md: 4, lg: 4}} gap={3}>
+      <SimpleGrid columns={{ base: 1, md: 4, lg: 5}} gap={3}>
         {items.map((content, index) => (
           <GridItem key={index}>
             <Card.Root
-              borderRadius="black"
               height="100%"
-              backgroundColor="#0D1E4A"
+              backgroundColor="#190250"
             >
               <Card.Body p={6} gap={2}>
                 <Box height="100px">
-                  <Text fontSize="3xl" color="white" textShadow="0 0 12px rgba(255,255,255,1.0)">
+                  <Text fontSize="3xl" color="rgb(124, 243, 252)" textShadow="0 0 12px rgba(255,255,255,1.0)">
                     {content.number}.
                   </Text>
-                  <Text fontSize="xl" color="white" textShadow="0 0 12px rgba(255,255,255,1.0)">
+                  <Text fontSize="xl" color="rgb(124, 243, 252)" textShadow="0 0 12px rgba(255,255,255,1.0)">
                     {content.title}
                   </Text>
                 </Box>
@@ -77,7 +76,7 @@ export function WhatWeDo() {
                       ml={8}
                       fontSize="md"
                       fontWeight="bold"
-                      color="white"
+                      color="rgb(124, 243, 252)"
                       textShadow="0 0 12px rgba(255,255,255,0.6)"
                     >
                       {item}

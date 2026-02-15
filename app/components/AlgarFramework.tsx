@@ -75,7 +75,7 @@ export function AlgarFramework() {
     </Box> */}
 
     </Center>
-<Box
+{/* <Box
 width="100%"
 bg="black"
 color="white">
@@ -90,7 +90,7 @@ color="white">
           <Flex justifyContent="center" py="2%">
           <FaQuoteRight size="50px"/>
           </Flex>
- </Box>
+ </Box> */}
  {/*----------------------------------------------------------------------------- VISITORS------------------------------------------------------------*/}
     <Center>
 <Box 

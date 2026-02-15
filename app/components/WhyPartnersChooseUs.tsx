@@ -32,7 +32,7 @@ export function WhyPartnersChooseUs() {
   return (
     <Box
     alignContent="center"
-    backgroundColor="rgb(12, 60, 96)"
+    backgroundColor="#190250"
     width="100%">
     <Flex
       my="3%"
@@ -44,8 +44,8 @@ export function WhyPartnersChooseUs() {
       flexDir="column"
       
     >
-      <Text fontSize="5xl" color="white"
-                      textShadow="0 0 12px rgba(255,255,255,0.6)">
+      <Text fontSize="5xl" color="rgb(124, 243, 252)"
+                      textShadow="0 0 14px rgba(255,255,255,0.9)">
                         <br></br>
         Why Attend the U.S.–Asia Innovation Bridge Expo?
       </Text>
@@ -60,12 +60,12 @@ export function WhyPartnersChooseUs() {
                 border="none"
               >
                 <Card.Body p={3} alignItems="center">
-                  <Icon size="2xl" width="75px" height="75px">
+                  <Icon size="2xl" width="75px" height="75px" color="rgb(124, 243, 252)" shadow="0 0 12px rgb(124, 255, 183)">
                     {reason.icon}
                   </Icon>
                   <Text textAlign="center" fontWeight="bold" fontSize="xl"
-                  color="white"
-                      textShadow="0 0 12px rgba(255,255,255,0.6)">
+                  color="rgb(124, 243, 252)"
+                      textShadow="0 0 12px rgb(124, 243, 252)">
                     {reason.text}
                   </Text>
                 </Card.Body>

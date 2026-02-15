@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <Box backgroundColor="#0D1E4Abun">
+    <Box backgroundColor="#020f27">
       <Flex
         flexDir="column"
         maxWidth="1280px"
@@ -22,7 +22,9 @@ export function Footer() {
             </Link>
 
             <Box>
-              <Text>Philippines: </Text>
+              November 7-9, 2026 <br />
+              New Port World Resort, Metro Manila, Philippines <br />
+              inquiry@futurexchangesummit.com <br />
             </Box>
           </Flex>
           

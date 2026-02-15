@@ -8,7 +8,8 @@ import {
   VStack,
   Box,
   HStack,
-  Marquee
+  Marquee,
+  AspectRatio
 } from "@chakra-ui/react";
 
 export default function About() {
@@ -17,6 +18,7 @@ export default function About() {
       <Text fontSize="5xl" color="rgb(7, 33, 54)">
         About
       </Text>
+      
       <Text color="rgb(7, 33, 54)" fontSize="4xl">
         Futurescape Xchange is...
       </Text>
@@ -41,7 +43,9 @@ export default function About() {
           </VStack>
         </GridItem>
         <GridItem colSpan={{ base: 2 }}>
-          {/* <Image src="/about.jpg" /> */}
+          <AspectRatio ratio={16 / 9}>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.400312506141!2d121.01678307544971!3d14.519079979066682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cecce8891457%3A0x9ecf90c1c82a60c5!2sNewport%20World%20Resorts!5e0!3m2!1sen!2sus!4v1771127682207!5m2!1sen!2sus" />
+    </AspectRatio>
         </GridItem>
       </SimpleGrid>
 

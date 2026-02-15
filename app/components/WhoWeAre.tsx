@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Text, AspectRatio} from "@chakra-ui/react";
 import Link from "next/link";
 
 export function WhoWeAre() {
@@ -80,6 +80,23 @@ export function WhoWeAre() {
           </Link>
         </Flex>
       </Flex>
+      <Flex
+        alignItems="center"
+        flexWrap="wrap"
+        maxWidth="1280px"
+        mx="auto"
+        flexDir="row"
+        position="relative"
+        justifyContent="center"
+        zIndex={1}
+        my="2%"
+      >
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/s4xbURWyuAs?si=u_qijMrCNZ-SILPl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+      </Flex>
     </Box>
+    
   );
 }

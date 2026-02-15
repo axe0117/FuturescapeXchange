@@ -45,7 +45,7 @@ export function Landing() {
           fontSize="2xl"
           fontWeight="extrabold"
           textShadow="0 0 20px rgba(255,255,255,2.0)"
-          color="black"
+          color="white"
         >
           Innovating Tomorrow,
         </Text>
@@ -53,14 +53,14 @@ export function Landing() {
           fontSize="2xl"
           fontWeight="extrabold"
           textShadow="0 0 20px rgba(255,255,255,2.0)"
-          color="black"
+          color="white"
         >
           Connecting Nations.
 
         </Text>
         <Text
           fontSize={{ base: "2xl", md: "6xl" }}
-          color="black"
+          color="white"
           textShadow="0 0 20px rgba(255,255,255,2.0)"
           //like 2.6 hog
           border="none"
@@ -70,7 +70,7 @@ export function Landing() {
         </Text>
         <Text
           fontSize={{ base: "2xl", md: "6xl" }}
-          color="black"
+          color="white"
           textShadow="0 0 20px rgba(255,255,255,2.0)"
           //like 2.6 hog
           border="none"
@@ -123,3 +123,7 @@ export function Landing() {
     </Box>
   );
 }
+
+
+// embed hydropanel https://youtu.be/s4xbURWyuAs?si=ShXeW5KKK9is1ZOH
+
