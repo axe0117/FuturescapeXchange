@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Text, AspectRatio} from "@chakra-ui/react";
+import { Box, Button, Flex, Text, AspectRatio } from "@chakra-ui/react";
 import Link from "next/link";
 
 export function WhoWeAre() {
@@ -40,12 +40,12 @@ export function WhoWeAre() {
 
         <Flex flexDir="column" gap={4}>
           <Text maxW="600px" color="rgb(7, 33, 54) " fontWeight="extrabold">
-          This event brings together global innovators, industry leaders, and government decision makers shaping the future of Asia's rapidly expanding economies.
-          More than just an exhibition, this premier B2B event is a tranformative movement dedicateed to accelerate technological innovation in several sectors.
-          <br></br><br></br>
-          Asia remains the world's fastest growing economic region
-          , driven by large-scale digital transformation, infrastructure modernization, healthcare expansion, and launching demand
-           for advanced automations.
+            This event brings together global innovators, industry leaders, and government decision makers shaping the future of Asia's rapidly expanding economies.
+            More than just an exhibition, this premier B2B event is a tranformative movement dedicateed to accelerate technological innovation in several sectors.
+            <br></br><br></br>
+            Asia remains the world's fastest growing economic region
+            , driven by large-scale digital transformation, infrastructure modernization, healthcare expansion, and launching demand
+            for advanced automations.
           </Text>
 
           <Link href="/about">
@@ -92,11 +92,11 @@ export function WhoWeAre() {
         my="2%"
       >
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/s4xbURWyuAs?si=u_qijMrCNZ-SILPl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/s4xbURWyuAs?si=u_qijMrCNZ-SILPl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
 
 
       </Flex>
     </Box>
-    
+
   );
 }
