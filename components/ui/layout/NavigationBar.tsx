@@ -46,7 +46,7 @@ export function NavigationBar() {
               <Drawer.Body p={12}>
                 <Link href="/">
                   <Text fontSize="2xl" fontWeight="bold" color="white" mb="20%">
-                    FUTURESCAPE XCHANGE
+                    FUTUREXCHANGE
                   </Text>
                 </Link>
                 <Flex gap={12} flexDir="column">

@@ -20,7 +20,7 @@ export default function About() {
       </Text>
       
       <Text color="rgb(7, 33, 54)" fontSize="4xl">
-        Futurescape Xchange is...
+        FutureXchange is...
       </Text>
       <SimpleGrid columns={{ base: 1, md: 4 }} gap={3}>
         <GridItem colSpan={{ base: 2 }}>
