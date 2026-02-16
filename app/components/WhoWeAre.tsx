@@ -92,7 +92,9 @@ export function WhoWeAre() {
         my="2%"
       >
 
-        {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/s4xbURWyuAs?si=u_qijMrCNZ-SILPl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
+         <iframe width="560" height="315" title="naruto"
+        src="https://www.youtube.com/embed/s4xbURWyuAs?si=uy7-WKk8OwIl-qJp"
+        allowFullScreen></iframe> 
 
 
       </Flex>
