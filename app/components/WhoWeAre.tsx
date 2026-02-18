@@ -100,6 +100,10 @@ export function WhoWeAre() {
         src="https://www.youtube.com/embed/b_zoFvtf5AA?si=6961NDa-KFLkG02N"
         allowFullScreen></iframe> 
 
+        <iframe width="560" height="315" title="naruto"
+        src="https://www.youtube.com/embed/5PfG_I4Yv8g?si=yn3bA4H79CufLX0c"
+        allowFullScreen></iframe> 
+
 
       </Flex>
     </Box>
