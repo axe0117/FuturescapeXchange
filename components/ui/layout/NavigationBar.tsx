@@ -95,7 +95,7 @@ export function NavigationBar() {
         >
           <Flex flexDir="row" alignItems="center" gap={2}>
             <Link href="/">
-              <Image src="/logo.png" alt="Logo" maxWidth="1000px" maxHeight="1000px" />
+              <Image src="/logo.png" alt="Logo" maxWidth="800px" maxHeight="800px" />
             </Link>
           </Flex>
           <Icon
