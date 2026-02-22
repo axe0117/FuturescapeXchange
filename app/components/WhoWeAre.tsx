@@ -92,19 +92,19 @@ export function WhoWeAre() {
         my="2%"
       >
 
-         <iframe width="560" height="315" title="naruto"
+         <iframe width="560" height="315" title="panel"
         src="https://www.youtube.com/embed/s4xbURWyuAs?si=uy7-WKk8OwIl-qJp"
         allowFullScreen></iframe> 
 
-        <iframe width="560" height="315" title="naruto"
+        <iframe width="560" height="315" title="bioprint"
         src="https://www.youtube.com/embed/b_zoFvtf5AA?si=6961NDa-KFLkG02N"
         allowFullScreen></iframe> 
 
-        <iframe width="560" height="315" title="naruto"
+        <iframe width="560" height="315" title="medtronic"
         src="https://www.youtube.com/embed/5PfG_I4Yv8g?si=yn3bA4H79CufLX0c"
         allowFullScreen></iframe> 
 
-        <iframe width="560" height="315" title="naruto"
+        <iframe width="560" height="315" title="davinci"
         src="https://www.youtube.com/embed/QksAVT0YMEo?si=LS-DiWHr80gt595p"
         allowFullScreen></iframe> 
 

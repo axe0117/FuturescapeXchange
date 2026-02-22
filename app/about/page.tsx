@@ -10,7 +10,8 @@ import {
   HStack,
   Marquee,
   AspectRatio,
-  Button
+  Button,
+  Link
 } from "@chakra-ui/react";
 
 export default function About() {
@@ -57,7 +58,7 @@ export default function About() {
         <GridItem colSpan={{ base: 2 }}>
           <VStack gap={12} alignItems="flex-start">
             <Text>
-              Event Name: FuturXchange Forum 2026 <br />
+              Event Name: FutureXchange Forum 2026 <br />
               Organizer: Algar Ally International <br />
               Event Type: International Business, Innovation &amp; Investment Forum <br />
               Event Dates: November 2026 (Exact dates TBD) <br />
@@ -98,9 +99,10 @@ export default function About() {
         </GridItem>
       </SimpleGrid>
 
- <a href="/event.pdf" download="FX_Event_Breakdown">
+ {/* <a href="/FX_Event_Breakdown.pdf" download="FX_Event_Breakdown"> */}
+ <Link href="/FX_Event_Breakdown.pdf" download="FX_Event_Breakdown">
  <Button variant="outline">Download Full Event Breakdown PDF (1.57 MB) </Button>
-</a>
+</Link>
 
 <Box height="500px" overflow="hidden" perspective="500px">
     <HStack

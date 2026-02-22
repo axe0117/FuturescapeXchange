@@ -46,7 +46,7 @@ export function NavigationBar() {
               <Drawer.Body p={12}>
                 <Link href="/">
                   <Text fontSize="2xl" fontWeight="bold" color="white" mb="20%">
-                    FUTUREXCHANGE
+                    FUTUREXCHANGE SUMMIT
                   </Text>
                 </Link>
                 <Flex gap={12} flexDir="column">
@@ -95,7 +95,7 @@ export function NavigationBar() {
         >
           <Flex flexDir="row" alignItems="center" gap={2}>
             <Link href="/">
-              <Image src="/logo.png" alt="Logo" maxWidth="300px" maxHeight="300px" />
+              <Image src="/logo.png" alt="Logo" maxWidth="500px" maxHeight="500px" />
             </Link>
           </Flex>
           <Icon

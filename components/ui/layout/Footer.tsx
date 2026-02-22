@@ -18,7 +18,7 @@ export function Footer() {
         <Flex justifyContent="space-between" flexWrap="wrap" gap={6}>
           <Flex flexDir="column" gap={1}>
             <Link href="/">
-              <Text fontWeight="bold">FUTUREXCHANGE</Text>
+              <Text fontWeight="bold">FUTUREXCHANGE SUMMIT</Text>
             </Link>
 
             <Box>
@@ -45,7 +45,7 @@ export function Footer() {
             </Box>
           </Flex>
         </Flex>
-        <Text>© FUTUREXCHANGE, {new Date().getFullYear()}</Text>
+        <Text>© FUTUREXCHANGE SUMMIT, {new Date().getFullYear()}</Text>
       </Flex>
     </Box>
   );
