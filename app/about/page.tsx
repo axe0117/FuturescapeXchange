@@ -9,7 +9,8 @@ import {
   Box,
   HStack,
   Marquee,
-  AspectRatio
+  AspectRatio,
+  Button
 } from "@chakra-ui/react";
 
 export default function About() {
@@ -96,7 +97,11 @@ export default function About() {
           </VStack>
         </GridItem>
       </SimpleGrid>
-      
+
+ <a href="/event.pdf" download="FX_Event_Breakdown">
+ <Button variant="outline">Download Full Event Breakdown PDF (1.57 MB) </Button>
+</a>
+
 <Box height="500px" overflow="hidden" perspective="500px">
     <HStack
       gap="4"
@@ -133,6 +138,8 @@ export default function About() {
     
   );
 }
+
+
 const MarqueeItems = (props: { images: string[] }) => {
   return (
     <>
