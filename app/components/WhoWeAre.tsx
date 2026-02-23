@@ -112,6 +112,10 @@ export function WhoWeAre() {
         src="https://www.youtube.com/embed/Fw9qzVFwE8c?si=sqCUksoMiQWi916M"
         allowFullScreen></iframe> 
 
+        <iframe width="560" height="315" title="photonic"
+        src="https://www.youtube.com/embed/wk146eGRUtI?si=FooSZY50M9MXZEBp"
+        allowFullScreen></iframe> 
+
       </Flex>
     </Box>
 
