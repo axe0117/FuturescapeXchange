@@ -22,7 +22,7 @@ export default function About() {
       </Text>
       
       <Text color="rgb(7, 33, 54)" fontSize="4xl">
-        FutureXchange is...
+        FutureXchange Summit is...
       </Text>
       <SimpleGrid columns={{ base: 1, md: 4 }} gap={3}>
         <GridItem colSpan={{ base: 2 }}>
@@ -58,7 +58,7 @@ export default function About() {
         <GridItem colSpan={{ base: 2 }}>
           <VStack gap={12} alignItems="flex-start">
             <Text>
-              Event Name: FutureXchange Forum 2026 <br />
+              Event Name: FutureXchange Summit 2026 <br />
               Organizer: Algar Ally International <br />
               Event Type: International Business, Innovation &amp; Investment Forum <br />
               Event Dates: November 2026 (Exact dates TBD) <br />
@@ -94,7 +94,11 @@ export default function About() {
               • Media and livestream support <br />
 
             </Text>
-            <Span></Span>
+            <Span>
+              <Image src="/venue.png/">
+
+              </Image>
+            </Span>
           </VStack>
         </GridItem>
       </SimpleGrid>

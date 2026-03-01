@@ -62,9 +62,6 @@ export default function Slides() {
       <Image src="/Slide17.PNG/">
 
       </Image>
-      <Image src="/Slide18.PNG/">
-
-      </Image>
       <Image src="/Slide19.PNG/">
 
       </Image>
