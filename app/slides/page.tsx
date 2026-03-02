@@ -62,9 +62,6 @@ export default function Slides() {
       <Image src="/Slide17.PNG/">
 
       </Image>
-      <Image src="/Slide19.PNG/">
-
-      </Image>
 
       <Link href="https://form.jotform.com/253626865726065" id="reg">
           <Button
