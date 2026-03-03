@@ -14,7 +14,7 @@ export function AlgarFramework() {
   return (
     <div>
     <Center>
-      {/* <Box 
+      <Box 
         py="2%"
         justifyContent="center"
         textAlign="center"
@@ -25,19 +25,14 @@ export function AlgarFramework() {
        <Text fontSize="5xl" color="rgb(255, 255, 255)" fontWeight="extrabold">
           2026 Content
         </Text>
-        <Text fontSize="2xl" color="rgb(255, 255, 255)" fontWeight="extrabold">
-          Speakers
-        </Text> */}
-
-    {/* <Carousel.Root
-      autoplay={{ delay: 5000 }}
+     <Carousel.Root
       slideCount={items.length}
       mx="auto"
       maxW="2x1"
       py="2%"
       position="relative"
       gap="4"
-      slidesPerPage={5}
+      slidesPerPage={1}
     >
        
       <HStack textStyle="sm" mb="4">
@@ -57,14 +52,6 @@ export function AlgarFramework() {
           </IconButton>
         </Carousel.PrevTrigger>
 
-        <Carousel.AutoplayTrigger asChild>
-          <IconButton aria-label="Toggle autoplay" size="sm" variant="ghost" color="white">
-            <Carousel.AutoplayIndicator
-              paused={<LuPause />}
-              play={<LuPlay />}
-            />
-          </IconButton>
-        </Carousel.AutoplayTrigger>
         <Carousel.NextTrigger asChild>
           <IconButton size="xs" variant="ghost" color="white">
             <LuChevronRight />
@@ -72,10 +59,10 @@ export function AlgarFramework() {
         </Carousel.NextTrigger>
       </Carousel.Control>
     </Carousel.Root>
-    </Box> */}
+    </Box>
 
     </Center>
-{/* <Box
+<Box
 width="100%"
 bg="black"
 color="white">
@@ -90,7 +77,7 @@ color="white">
           <Flex justifyContent="center" py="2%">
           <FaQuoteRight size="50px"/>
           </Flex>
- </Box> */}
+ </Box>
  {/*----------------------------------------------------------------------------- VISITORS------------------------------------------------------------*/}
     <Center>
 <Box 
@@ -158,73 +145,70 @@ color="white">
 }
 
 //////////SPEAKER STUFF
-// interface SpeakerCardProps {
-//   data: Speaker
-// }
+interface SpeakerCardProps {
+  data: Speaker
+}
 
-// const SpeakerCard = ({ data }: SpeakerCardProps) => (
-//   <Stack gap="3">
-//     <Box position="relative" justifyItems="center">
-//       <Image
-//         src={data.image}
-//         alt={data.title}
-//         rounded="l2"
-//         w="250px"
-//         h="250px"
-//         objectFit="cover"
-//         draggable={false}
-//       />
+const SpeakerCard = ({ data }: SpeakerCardProps) => (
+  <Stack gap="3">
+    <Box position="relative" justifyItems="center">
+      <iframe
+        src={data.link}
+        title={data.title}
+        width="560px"
+        height="315px"
+        draggable={false}
+        allowFullScreen
+      />
 
-//     </Box>
-//     <Stack gap="1">
-//       <Span fontWeight="semibold" textStyle="sm">
-//         {data.title}
-//       </Span>
-//       <Span  textStyle="xs">{data.desc}</Span>
-//     </Stack>
-//   </Stack>
-// )
+    </Box>
+    <Stack gap="1">
+      <Span fontWeight="semibold" textStyle="sm">
+        {data.title}
+      </Span>
 
-// interface Speaker {
-//   id: number
-//   title: string
-//   image: string
-//   desc: string
-// }
+    </Stack>
+  </Stack>
+)
 
-// const speakers: Speaker[] = [
-//   {
-//     id: 1,
-//     title: "Deepak Chopra",
-//     image: "/deepak.jpg",
-//     desc: "Author"
-//   },
-  
-//   {
-//     id: 2,
-//     title: "Jim Himmes",
-//     image: "/himmes.jfif",
-//     desc: "Source Global CEO"
-//   },
-//   {
-//     id: 3,
-//     title: "Leonardo DiCaprio",
-//     image: "leo.jpg",
-//     desc: "Actor and Producer"
-//   },
-//   {
-//     id: 4,
-//     title: "Eric Trump",
-//     image: "eric.jfif",
-//     desc: "American Businessman"
-//   },
-//   {
-//     id: 5,
-//     title: "Elon Musk",
-//     image: "elon.jpg",
-//     desc: "Tesla and SpaceX CEO"
-//   },
-// ]
+interface Speaker {
+  id: number
+  title: string
+  link: string
+}
+
+const speakers: Speaker[] = [
+  {
+    id: 1,
+    title: "Source Global Hydropanel",
+    link: "https://www.youtube.com/embed/s4xbURWyuAs?si=uy7-WKk8OwIl-qJp",
+  },
+  {
+    id: 2,
+    title: "3D Bioprinting",
+    link: "https://www.youtube.com/embed/b_zoFvtf5AA?si=6961NDa-KFLkG02N",
+  },
+  {
+    id: 3,
+    title: "Medtronic",
+    link: "https://www.youtube.com/embed/5PfG_I4Yv8g?si=yn3bA4H79CufLX0c",
+  },
+  {
+    id: 4,
+    title: "DaVinci Surgery Robot",
+    link: "https://www.youtube.com/embed/QksAVT0YMEo?si=LS-DiWHr80gt595p",
+  },
+  {
+    id: 5,
+    title: "Photonics Industries 30th Anniversary",
+    link: "https://www.youtube.com/embed/Fw9qzVFwE8c?si=sqCUksoMiQWi916M",
+  },
+  {
+    id: 6,
+    title: "Corningware Glass Technology Demo",
+    link: "https://www.youtube.com/embed/wk146eGRUtI?si=FooSZY50M9MXZEBp",
+  },
+]
 
 
 /////////// VISITOR STUFF

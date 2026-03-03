@@ -80,7 +80,7 @@ export function WhoWeAre() {
           </Link>
         </Flex>
       </Flex>
-      <Flex
+      {/* <Flex
         alignItems="center"
         flexWrap="wrap"
         maxWidth="1280px"
@@ -116,7 +116,7 @@ export function WhoWeAre() {
         src="https://www.youtube.com/embed/wk146eGRUtI?si=FooSZY50M9MXZEBp"
         allowFullScreen></iframe> 
 
-      </Flex>
+      </Flex> */}
     </Box>
 
   );
