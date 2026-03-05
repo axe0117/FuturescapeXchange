@@ -155,8 +155,8 @@ const SpeakerCard = ({ data }: SpeakerCardProps) => (
       <iframe
         src={data.link}
         title={data.title}
-        width="560px"
-        height="315px"
+        width="720px"
+        height="480px"
         draggable={false}
         allowFullScreen
       />
@@ -224,15 +224,15 @@ const VisitorCard = ({ data }: VisitorCardProps) => (
         src={data.image}
         alt={data.title}
         rounded="l2"
-        w="250px"
-        h="250px"
+        w={{ base: "100px", lg: "250" }}
+        h={{ base: "100px", lg: "250" }}
         objectFit="contain"
         draggable={false}
       />
 
     </Box>
     <Stack gap="1">
-      <Span color="black" fontWeight="semibold" textStyle="sm">
+      <Span color="black" fontWeight="semibold" textStyle={{ base: "xs", lg: "sm" }}>
         {data.title}
       </Span>
     </Stack>

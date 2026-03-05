@@ -45,7 +45,7 @@ export function NavigationBar() {
             <Drawer.Content backgroundColor="#190250" userSelect="none">
               <Drawer.Body p={12}>
                 <Link href="/">
-                  <Text fontSize="2xl" fontWeight="bold" color="white" mb="20%">
+                  <Text fontSize={{ base: "lg", lg: "2xl" }} fontWeight="bold" color="white" mb="20%">
                     FUTUREXCHANGE SUMMIT
                   </Text>
                 </Link>
@@ -88,14 +88,19 @@ export function NavigationBar() {
         <Flex
           maxWidth="1280px"
           mx="auto"
-          px={3}
+          px={{ base: "10", lg: "3" }}
           justifyContent="space-between"
           alignItems="center"
           userSelect="none"
+          
         >
           <Flex flexDir="row" alignItems="center" gap={2}>
             <Link href="/">
-              <Image src="/logo.png" alt="Logo" maxWidth="600px" maxHeight="600px" />
+              <Image 
+              src="/logo.png" 
+              alt="Logo" 
+              maxWidth={{ base: "300px", lg: "800px" }} 
+              maxHeight="600px" />
             </Link>
           </Flex>
           <Icon
