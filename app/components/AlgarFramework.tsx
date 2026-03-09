@@ -208,6 +208,16 @@ const speakers: Speaker[] = [
     title: "Corningware Glass Technology Demo",
     link: "https://www.youtube.com/embed/wk146eGRUtI?si=FooSZY50M9MXZEBp",
   },
+  {
+    id: 7,
+    title: "GFS Manufacturing",
+    link: "https://www.youtube.com/embed/JXX65kXdg7M?si=KX7KQCCE3ZuGUy1w",
+  },
+  {
+    id: 8,
+    title: "GFS Manufacturing",
+    link: "https://www.youtube.com/embed/tx8LieReA0U?si=n6-6ENCd2vKRBhCu",
+  },
 ]
 
 
@@ -341,5 +351,10 @@ const visitors: Visitor[] = [
     id: 19,
     title: "NutriHydro",
     image: "nutrihydro.jpg",
+  },
+  {
+    id: 20,
+    title: "GFS Manufacturing",
+    image: "GFS.png",
   },
 ]
