@@ -1,152 +1,158 @@
-import { Center, Container, Flex, GridItem, SimpleGrid, Text } from "@chakra-ui/react";
-import { Icon, Carousel, HStack, IconButton, Box, Stack, Image, Badge, Span} from "@chakra-ui/react"
 import {
-  LuChevronLeft,
-  LuChevronRight,
-  LuPause,
-  LuPlay,
-} from "react-icons/lu"
+  Center,
+  Container,
+  Flex,
+  GridItem,
+  SimpleGrid,
+  Text
+} from "@chakra-ui/react";
+import {
+  Icon,
+  Carousel,
+  HStack,
+  IconButton,
+  Box,
+  Stack,
+  Image,
+  Badge,
+  Span
+} from "@chakra-ui/react";
+import { LuChevronLeft, LuChevronRight, LuPause, LuPlay } from "react-icons/lu";
 import { FaQuoteLeft } from "react-icons/fa6";
 import { FaQuoteRight } from "react-icons/fa6";
 
-const items = Array.from({ length: 5 })
+const items = Array.from({ length: 5 });
 export function AlgarFramework() {
   return (
     <div>
-    <Center>
-      <Box 
-        py="2%"
-        justifyContent="center"
-        textAlign="center"
-        width="100%"
-        backgroundColor="#000000"
-        color="white"
-      >
-       <Text fontSize="5xl" color="rgb(255, 255, 255)" fontWeight="extrabold">
-          2026 Content
-        </Text>
-     <Carousel.Root
-      slideCount={items.length}
-      mx="auto"
-      maxW="2x1"
-      py="2%"
-      position="relative"
-      gap="4"
-      slidesPerPage={1}
-    >
-       
-      <HStack textStyle="sm" mb="4">
-      </HStack>
-      <Carousel.ItemGroup>
-        {speakers.map((speaker, index) => (
-          <Carousel.Item key={speaker.id} index={index}>
-            <SpeakerCard data={speaker} />
-          </Carousel.Item>
-        ))}
-      </Carousel.ItemGroup>
+      <Center>
+        <Box
+          py="2%"
+          justifyContent="center"
+          textAlign="center"
+          width="100%"
+          backgroundColor="#000000"
+          color="white"
+        >
+          <Text
+            fontSize="5xl"
+            color="rgb(255, 255, 255)"
+            fontWeight="extrabold"
+          >
+            2026 Content
+          </Text>
+          <Carousel.Root
+            slideCount={items.length}
+            mx="auto"
+            maxW="2x1"
+            py="2%"
+            position="relative"
+            gap="4"
+            slidesPerPage={1}
+          >
+            <HStack textStyle="sm" mb="4"></HStack>
+            <Carousel.ItemGroup>
+              {speakers.map((speaker, index) => (
+                <Carousel.Item key={speaker.id} index={index}>
+                  <SpeakerCard data={speaker} />
+                </Carousel.Item>
+              ))}
+            </Carousel.ItemGroup>
 
-      <Carousel.Control justifyContent="center" gap="4">
-        <Carousel.PrevTrigger asChild>
-          <IconButton size="xs" variant="ghost" color="white">
-            <LuChevronLeft />
-          </IconButton>
-        </Carousel.PrevTrigger>
+            <Carousel.Control justifyContent="center" gap="4">
+              <Carousel.PrevTrigger asChild>
+                <IconButton size="xs" variant="ghost" color="white">
+                  <LuChevronLeft />
+                </IconButton>
+              </Carousel.PrevTrigger>
 
-        <Carousel.NextTrigger asChild>
-          <IconButton size="xs" variant="ghost" color="white">
-            <LuChevronRight />
-          </IconButton>
-        </Carousel.NextTrigger>
-      </Carousel.Control>
-    </Carousel.Root>
-    </Box>
+              <Carousel.NextTrigger asChild>
+                <IconButton size="xs" variant="ghost" color="white">
+                  <LuChevronRight />
+                </IconButton>
+              </Carousel.NextTrigger>
+            </Carousel.Control>
+          </Carousel.Root>
+        </Box>
+      </Center>
+      <Box width="100%" bg="black" color="white">
+        <Flex justifyContent="center" py="2%" textAlign="center">
+          <FaQuoteLeft size="50px" />
+        </Flex>
 
-    </Center>
-<Box
-width="100%"
-bg="black"
-color="white">
-  <Flex justifyContent="center" py="2%" textAlign="center">
-      <FaQuoteLeft size="50px" />
-      </Flex>
-      
-      <Container textAlign="center">
-        
-          </Container>
-         
-          <Flex justifyContent="center" py="2%">
-          <FaQuoteRight size="50px"/>
-          </Flex>
- </Box>
- {/*----------------------------------------------------------------------------- VISITORS------------------------------------------------------------*/}
-    <Center>
-<Box 
-        py="2%"
-        justifyContent="center"
-        textAlign="center"
-        width="100%"
-        backgroundColor="#ffffff"
-        color="white"
-      >
-       <Text fontSize="5xl" color="rgb(0, 0, 0)" fontWeight="extrabold">
-          2026 Visitors
-        </Text>
+        <Container textAlign="center"></Container>
 
+        <Flex justifyContent="center" py="2%">
+          <FaQuoteRight size="50px" />
+        </Flex>
+      </Box>
+      {/*----------------------------------------------------------------------------- VISITORS------------------------------------------------------------*/}
+      <Center>
+        <Box
+          py="2%"
+          justifyContent="center"
+          textAlign="center"
+          width="100%"
+          backgroundColor="#ffffff"
+          color="white"
+        >
+          <Text fontSize="5xl" color="rgb(0, 0, 0)" fontWeight="extrabold">
+            2026 Partners
+          </Text>
 
-    <Carousel.Root
-      autoplay={{ delay: 5000 }}
-      slideCount={items.length}
-      mx="auto"
-      maxW="2x1"
-      py="2%"
-      position="relative"
-      gap="4"
-      slidesPerPage={5}
-    >
-       
-      <HStack textStyle="sm" mb="4">
-      </HStack>
-      <Carousel.ItemGroup>
-        {visitors.map((visitor, index) => (
-          <Carousel.Item key={visitor.id} index={index}>
-            <VisitorCard data={visitor} />
-          </Carousel.Item>
-        ))}
-      </Carousel.ItemGroup>
+          <Carousel.Root
+            autoplay={{ delay: 5000 }}
+            slideCount={items.length}
+            mx="auto"
+            maxW="2x1"
+            py="2%"
+            position="relative"
+            gap="4"
+            slidesPerPage={5}
+          >
+            <HStack textStyle="sm" mb="4"></HStack>
+            <Carousel.ItemGroup>
+              {visitors.map((visitor, index) => (
+                <Carousel.Item key={visitor.id} index={index}>
+                  <VisitorCard data={visitor} />
+                </Carousel.Item>
+              ))}
+            </Carousel.ItemGroup>
+            <Carousel.Control justifyContent="center" gap="4">
+              <Carousel.PrevTrigger asChild>
+                <IconButton size="xs" variant="ghost">
+                  <LuChevronLeft />
+                </IconButton>
+              </Carousel.PrevTrigger>
 
-     <Carousel.Control justifyContent="center" gap="4">
-        <Carousel.PrevTrigger asChild>
-          <IconButton size="xs" variant="ghost" color="black">
-            <LuChevronLeft />
-          </IconButton>
-        </Carousel.PrevTrigger>
-
-        <Carousel.AutoplayTrigger asChild>
-          <IconButton aria-label="Toggle autoplay" size="sm" variant="ghost" color="black">
-            <Carousel.AutoplayIndicator
-              paused={<LuPause />}
-              play={<LuPlay />}
-            />
-          </IconButton>
-        </Carousel.AutoplayTrigger>
-        <Carousel.NextTrigger asChild>
-          <IconButton size="xs" variant="ghost" color="black">
-            <LuChevronRight />
-          </IconButton>
-        </Carousel.NextTrigger>
-      </Carousel.Control>
-
-    </Carousel.Root>
-    </Box>
-    </Center>
+              <Carousel.AutoplayTrigger asChild>
+                <IconButton
+                  aria-label="Toggle autoplay"
+                  size="sm"
+                  variant="ghost"
+                >
+                  <Carousel.AutoplayIndicator
+                    paused={<LuPause />}
+                    play={<LuPlay />}
+                  />
+                </IconButton>
+              </Carousel.AutoplayTrigger>
+              <Carousel.NextTrigger asChild>
+                <IconButton size="xs" variant="ghost">
+                  <LuChevronRight />
+                </IconButton>
+              </Carousel.NextTrigger>
+            </Carousel.Control>
+          </Carousel.Root>
+        </Box>
+      </Center>
     </div>
-  )
-  
+  );
 }
 
 //////////SPEAKER STUFF
 interface SpeakerCardProps {
-  data: Speaker
+  data: Speaker;
 }
 
 const SpeakerCard = ({ data }: SpeakerCardProps) => (
@@ -160,71 +166,73 @@ const SpeakerCard = ({ data }: SpeakerCardProps) => (
         draggable={false}
         allowFullScreen
       />
-
     </Box>
     <Stack gap="1">
       <Span fontWeight="semibold" textStyle="sm">
         {data.title}
       </Span>
-
     </Stack>
   </Stack>
-)
+);
 
 interface Speaker {
-  id: number
-  title: string
-  link: string
+  id: number;
+  title: string;
+  link: string;
 }
 
 const speakers: Speaker[] = [
   {
     id: 1,
-    title: "Source Global Hydropanel",
-    link: "https://www.youtube.com/embed/s4xbURWyuAs?si=uy7-WKk8OwIl-qJp",
+    title: "Delos Darwin Home Wellness Intelligence",
+    link: "https://www.youtube.com/embed/2MpGb12cB-4?si=kPicFk9Xyv52Hjv0"
   },
   {
     id: 2,
-    title: "3D Bioprinting",
-    link: "https://www.youtube.com/embed/b_zoFvtf5AA?si=6961NDa-KFLkG02N",
+    title: "Source Global Hydropanel",
+    link: "https://www.youtube.com/embed/s4xbURWyuAs?si=uy7-WKk8OwIl-qJp"
   },
   {
     id: 3,
-    title: "Medtronic",
-    link: "https://www.youtube.com/embed/5PfG_I4Yv8g?si=yn3bA4H79CufLX0c",
+    title: "3D Bioprinting",
+    link: "https://www.youtube.com/embed/b_zoFvtf5AA?si=6961NDa-KFLkG02N"
   },
   {
     id: 4,
-    title: "DaVinci Surgery Robot",
-    link: "https://www.youtube.com/embed/QksAVT0YMEo?si=LS-DiWHr80gt595p",
+    title: "Medtronic",
+    link: "https://www.youtube.com/embed/5PfG_I4Yv8g?si=yn3bA4H79CufLX0c"
   },
   {
     id: 5,
-    title: "Photonics Industries 30th Anniversary",
-    link: "https://www.youtube.com/embed/Fw9qzVFwE8c?si=sqCUksoMiQWi916M",
+    title: "DaVinci Surgery Robot",
+    link: "https://www.youtube.com/embed/QksAVT0YMEo?si=LS-DiWHr80gt595p"
   },
   {
     id: 6,
-    title: "Corningware Glass Technology Demo",
-    link: "https://www.youtube.com/embed/wk146eGRUtI?si=FooSZY50M9MXZEBp",
+    title: "Photonics Industries 30th Anniversary",
+    link: "https://www.youtube.com/embed/Fw9qzVFwE8c?si=sqCUksoMiQWi916M"
   },
   {
     id: 7,
-    title: "GFS Manufacturing",
-    link: "https://www.youtube.com/embed/JXX65kXdg7M?si=KX7KQCCE3ZuGUy1w",
+    title: "Corningware Glass Technology Demo",
+    link: "https://www.youtube.com/embed/wk146eGRUtI?si=FooSZY50M9MXZEBp"
   },
   {
     id: 8,
     title: "GFS Manufacturing",
-    link: "https://www.youtube.com/embed/tx8LieReA0U?si=n6-6ENCd2vKRBhCu",
+    link: "https://www.youtube.com/embed/JXX65kXdg7M?si=KX7KQCCE3ZuGUy1w"
   },
-]
-
+  {
+    id: 9,
+    title: "GFS Manufacturing",
+    link: "https://www.youtube.com/embed/tx8LieReA0U?si=n6-6ENCd2vKRBhCu"
+  }
+];
 
 /////////// VISITOR STUFF
 
 interface VisitorCardProps {
-  data: Visitor
+  data: Visitor;
 }
 
 const VisitorCard = ({ data }: VisitorCardProps) => (
@@ -239,122 +247,125 @@ const VisitorCard = ({ data }: VisitorCardProps) => (
         objectFit="contain"
         draggable={false}
       />
-
     </Box>
     <Stack gap="1">
-      <Span color="black" fontWeight="semibold" textStyle={{ base: "xs", lg: "sm" }}>
+      <Span
+        color="black"
+        fontWeight="semibold"
+        textStyle={{ base: "xs", lg: "sm" }}
+      >
         {data.title}
       </Span>
     </Stack>
   </Stack>
-)
+);
 
 interface Visitor {
-  id: number
-  title: string
-  image: string
+  id: number;
+  title: string;
+  image: string;
 }
 
 const visitors: Visitor[] = [
   {
     id: 1,
     title: "Medtronic",
-    image: "/medtronic.jpg",
+    image: "/medtronic.jpg"
   },
-  
+
   {
     id: 2,
     title: "J&J Medtech",
-    image: "/jjmedtech.jpg",
+    image: "/jjmedtech.jpg"
   },
   {
     id: 3,
     title: "Siemens",
-    image: "siemens.png",
+    image: "siemens.png"
   },
   {
     id: 4,
     title: "Medline Distributor",
-    image: "medline.png",
+    image: "medline.png"
   },
   {
     id: 5,
     title: "Stryker",
-    image: "stryker.png",
+    image: "stryker.png"
   },
-    {
+  {
     id: 6,
     title: "BD",
-    image: "BD.jpg",
+    image: "BD.jpg"
   },
-    {
+  {
     id: 7,
     title: "GE Healthcare",
-    image: "gehealthcare.png",
+    image: "gehealthcare.png"
   },
-    {
+  {
     id: 8,
     title: "Philips",
-    image: "philips.jpg",
+    image: "philips.jpg"
   },
-    {
+  {
     id: 9,
     title: "Abbott",
-    image: "abbott.jpg",
+    image: "abbott.jpg"
   },
-    {
+  {
     id: 10,
     title: "Roche Diagnostics",
-    image: "roche.png",
+    image: "roche.png"
   },
-    {
+  {
     id: 11,
     title: "Boston Scientific",
-    image: "boston.png",
+    image: "boston.png"
   },
   {
     id: 12,
     title: "Cardinal Health",
-    image: "cardinal.jpg",
+    image: "cardinal.jpg"
   },
   {
     id: 13,
     title: "B Braun Medical Supplies",
-    image: "bbraun.png",
+    image: "bbraun.png"
   },
   {
     id: 14,
     title: "Lifeline Diagnostic",
-    image: "lifeline.png",
+    image: "lifeline.png"
   },
   {
     id: 15,
     title: "Transmedic Philippines",
-    image: "transmedic.png",
+    image: "transmedic.png"
   },
   {
     id: 16,
     title: "Equilife Medical Equipment",
-    image: "equilife.jfif",
+    image: "equilife.jfif"
   },
   {
     id: 17,
     title: "IDS Medical Systems",
-    image: "ids.jfif",
+    image: "ids.jfif"
   },
   {
     id: 18,
     title: "AAMI",
-    image: "aami.png",
+    image: "aami.png"
   },
   {
     id: 19,
     title: "NutriHydro",
-    image: "nutrihydro.jpg",
+    image: "nutrihydro.jpg"
   },
   {
     id: 20,
     title: "GFS Manufacturing",
-    image: "GFS.png",
-  },
-]
+    image: "GFS.png"
+  }
+];

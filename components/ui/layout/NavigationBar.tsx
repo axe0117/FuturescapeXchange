@@ -45,15 +45,20 @@ export function NavigationBar() {
             <Drawer.Content backgroundColor="#190250" userSelect="none">
               <Drawer.Body p={12}>
                 <Link href="/">
-                  <Text fontSize={{ base: "lg", lg: "2xl" }} fontWeight="bold" color="white" mb="20%">
+                  <Text
+                    fontSize={{ base: "lg", lg: "2xl" }}
+                    fontWeight="bold"
+                    color="white"
+                    mb="20%"
+                  >
                     FUTUREXCHANGE SUMMIT
                   </Text>
                 </Link>
                 <Flex gap={12} flexDir="column">
                   {[
                     { name: "About", url: "/about" },
-                    { name: "Register to Attend", url: "/#solutions" },
-                    { name: "Book a Table", url: "/slides" }
+                    { name: "Join Us", url: "/summitslides#reg" },
+                    { name: "Additional Slides", url: "/slides" }
                   ].map((link) => (
                     <Link href={link.url} key={link.url}>
                       <Text
@@ -92,15 +97,15 @@ export function NavigationBar() {
           justifyContent="space-between"
           alignItems="center"
           userSelect="none"
-          
         >
           <Flex flexDir="row" alignItems="center" gap={2}>
             <Link href="/">
-              <Image 
-              src="/logo.png" 
-              alt="Logo" 
-              maxWidth={{ base: "300px", lg: "800px" }} 
-              maxHeight="600px" />
+              <Image
+                src="/logo.png"
+                alt="Logo"
+                maxWidth={{ base: "300px", lg: "800px" }}
+                maxHeight="600px"
+              />
             </Link>
           </Flex>
           <Icon

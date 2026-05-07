@@ -40,12 +40,16 @@ export function WhoWeAre() {
 
         <Flex flexDir="column" gap={4}>
           <Text maxW="600px" color="rgb(7, 33, 54) " fontWeight="extrabold">
-            This event brings together global innovators, industry leaders, and government decision makers shaping the future of Asia's rapidly expanding economies.
-            More than just an exhibition, this premier B2B event is a tranformative movement dedicateed to accelerate technological innovation in several sectors.
-            <br></br><br></br>
-            Asia remains the world's fastest growing economic region
-            , driven by large-scale digital transformation, infrastructure modernization, healthcare expansion, and launching demand
-            for advanced automations.
+            This event brings together global innovators, industry leaders, and
+            government decision makers shaping the future of Asia's rapidly
+            expanding economies. More than just an exhibition, this premier B2B
+            event is a tranformative movement dedicateed to accelerate
+            technological innovation in several sectors.
+            <br></br>
+            <br></br>
+            Asia remains the world's fastest growing economic region , driven by
+            large-scale digital transformation, infrastructure modernization,
+            healthcare expansion, and launching demand for advanced automations.
           </Text>
 
           <Link href="/about">
@@ -75,49 +79,11 @@ export function WhoWeAre() {
               fontWeight="bold"
               _hover={{ backgroundColor: "rgb(12, 60, 96)", color: "white" }}
             >
-              Become an Exhibitor
+              Additional Content
             </Button>
           </Link>
         </Flex>
       </Flex>
-      {/* <Flex
-        alignItems="center"
-        flexWrap="wrap"
-        maxWidth="1280px"
-        mx="auto"
-        flexDir="row"
-        position="relative"
-        justifyContent="center"
-        zIndex={1}
-        my="2%"
-      >
-
-         <iframe width="560" height="315" title="panel"
-        src="https://www.youtube.com/embed/s4xbURWyuAs?si=uy7-WKk8OwIl-qJp"
-        allowFullScreen></iframe> 
-
-        <iframe width="560" height="315" title="bioprint"
-        src="https://www.youtube.com/embed/b_zoFvtf5AA?si=6961NDa-KFLkG02N"
-        allowFullScreen></iframe> 
-
-        <iframe width="560" height="315" title="medtronic"
-        src="https://www.youtube.com/embed/5PfG_I4Yv8g?si=yn3bA4H79CufLX0c"
-        allowFullScreen></iframe> 
-
-        <iframe width="560" height="315" title="davinci"
-        src="https://www.youtube.com/embed/QksAVT0YMEo?si=LS-DiWHr80gt595p"
-        allowFullScreen></iframe> 
-
-        <iframe width="560" height="315" title="photonic"
-        src="https://www.youtube.com/embed/Fw9qzVFwE8c?si=sqCUksoMiQWi916M"
-        allowFullScreen></iframe> 
-
-        <iframe width="560" height="315" title="glass"
-        src="https://www.youtube.com/embed/wk146eGRUtI?si=FooSZY50M9MXZEBp"
-        allowFullScreen></iframe> 
-
-      </Flex> */}
     </Box>
-
   );
 }
