@@ -183,6 +183,11 @@ interface Speaker {
 
 const speakers: Speaker[] = [
   {
+    id: 0,
+    title: "Delos Monitoring System",
+    link: "https://www.youtube.com/embed/TC2zFs1DWq4?si=uAHSPachbLFwpb4J"
+  },
+  {
     id: 1,
     title: "Delos Darwin Home Wellness Intelligence",
     link: "https://www.youtube.com/embed/2MpGb12cB-4?si=kPicFk9Xyv52Hjv0"
@@ -267,6 +272,11 @@ interface Visitor {
 }
 
 const visitors: Visitor[] = [
+  {
+    id: 0,
+    title: "Delos",
+    image: "/delos.jpg"
+  },
   {
     id: 1,
     title: "Medtronic",
